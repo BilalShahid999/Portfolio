@@ -1,0 +1,875 @@
+<!Doctype html>
+<html class="no-js" lang="zxx">
+    <style>
+        .shimmer-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f0f0f0; /* Background color for the loader */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    
+    .shimmer-item {
+        width: 80%;
+        height: 20px;
+        background-color: #e0e0e0;
+        margin-bottom: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .shimmer-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, #e0e0e0, #f0f0f0, #e0e0e0);
+        background-size: 200% 200%;
+        animation: shimmer 1.5s ease infinite;
+    }
+    
+    @keyframes shimmer {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const loader = document.getElementById('shimmer-loader');
+    
+        window.onload = function() {
+            loader.style.display = 'none';
+        };
+    });
+    </script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bilal Shahid - Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/swipper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <div class="page-wrapper home-1" data-background="assets/img/bg/page-bg-1.jpg">
+
+        <!-- PRELOADER -->
+        <div id="shimmer-loader" class="shimmer-loader">
+            <div class="shimmer-item"></div>
+            <div class="shimmer-item"></div>
+            <div class="shimmer-item"></div>
+            <div class="shimmer-item"></div>
+        </div>
+            <!-- /PRELOADER -->
+
+        <!-- header-start -->
+        <div class="bostami-header-area mb-30 z-index-5">
+            <div class="container">
+                <div class="bostami-header-wrap">
+                    <div class="row align-items-center">
+
+                        <!-- logo -->
+                        <div class="col-6">
+                            <div class="bostami-header-logo">
+                                <a class="site-logo" href="../index.html">
+                                    <!-- <img src="assets/img/logo/logo-2.png" alt=""> -->
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- menu btn -->
+                        <div class="col-6">
+                            <div class="bostami-header-menu-btn text-right">
+                                <div class="dark-btn dark-btn-stored dark-btn-icon">
+                                    <i class="fa-light fa-moon"></i>
+                                    <i class="fa-light fa-sun"></i>
+                                </div>
+                                <div class="menu-btn toggle_menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- mobile menu -->
+                <div class="mobile-menu-wrap">
+                    <div class="mobile-menu mobile_menu">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- header-end -->
+
+
+        <div class="container z-index-3">
+            <div class="row">
+
+                <!-- parsonal-info-start -->
+                <div class="col-xxl-3 col-xl-3">
+                    <div class="bostami-parsonal-info-area">
+                        <div class="bostami-parsonal-info-wrap">
+
+                            <!-- img -->
+                            <div class="bostami-parsonal-info-img">
+                                <img src="assets/img/parsonal-info/parson-img-1.png" alt="avatar">
+                            </div>
+
+                            <!-- name -->
+                            <h4 class="bostami-parsonal-info-name">
+                                <a href="#">Bilal Shahid</a>
+                            </h4>
+                            <span class="bostami-parsonal-info-bio mb-15">Software Engineer</span>
+
+                            <!-- socail link -->
+                            <ul class="bostami-parsonal-info-social-link mb-30">
+                                <!-- <li>
+                                    <a href="#" class="facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li> -->
+                                <li>
+                                    <a href="https://github.com/BilalShahid999" class="instagram">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/-bilal-shahid/" class="linkedin">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- contact -->
+                            <div class="bostami-parsonal-info-contact mb-30">
+                                <div class="bostami-parsonal-info-contact-item phone">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Phone</span>
+                                        <p>+92 336 217 1987</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="bostami-parsonal-info-contact-item email">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-envelope-open-text"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Email</span>
+                                        <p>bilal.shahid262@gmail.com</p>
+                                    </div>
+                                </div>
+
+                                <div class="bostami-parsonal-info-contact-item location">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Location</span>
+                                        <p>Karachi, Pakistan
+
+</p>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="bostami-parsonal-info-contact-item calendar">
+                                    <div class="icon">
+                                        <i class="fa-light fa-calendar-days"></i>
+                                    </div>
+                                    <div class="text">
+                                        <span>Birthday</span>
+                                        <p>August 20, 2002</p>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <!-- cv button -->
+                            <div class="bostami-parsonal-info-btn">
+                                <a class="btn-1" href="Bilal Shahid Resume.pdf">
+                                    <span class="icon">
+                                        <i class="fa-regular fa-download"></i>
+                                    </span>
+                                    Download CV
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- personal-info-end -->
+
+                <!-- resume-page-start -->
+                <div class="col-xxl-8 col-xl-9">
+                    <div class="bostami-page-content-wrap">
+
+                        <!-- page title -->
+                        <div class="section-wrapper pl-60 pr-60 pt-60">
+                            <div class="bostami-page-title-wrap mb-15">
+                                <h2 class="page-title">Portfolio</h2>
+                            </div>
+                        </div>
+
+
+                        <div class="section-wrapper pr-60 pl-60 mb-60">
+                            <div class="row">
+
+                                <div class="col-12">
+                                    <ul class="fillter-btn-wrap buttonGroup isotop-menu-wrapper mb-30">
+                                        <!-- <li class="fillter-btn is-checked " data-filter="*">All</li>
+                                        <li class="fillter-btn" data-filter=".mockup">Mockup</li>
+                                        <li class="fillter-btn" data-filter=".design"> Graphic Design</li>
+                                        <li class="fillter-btn" data-filter=".logo"> logo</li> -->
+                                    </ul>
+                                </div>
+
+                                <div class="col-12">
+                                    <div id="fillter-item-active" class="fillter-item-wrap">
+                                        <div class="grid-sizer"></div>
+
+                                        <!-- signle item -->
+                                        <div class=" isotop-item  logo">
+                                            <div class="fillter-item bg-prink">
+                                                <a class="img" href="" data-bs-toggle="modal"
+                                                    data-bs-target="#portfolio-1">
+                                                    <img src="assets/img/work/work-img-1.png" alt="">
+                                                </a>
+                                                <span class="item-subtitle">Language Teacher</span>
+                                                <h6 class="item-title">
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#portfolio-1">Teacher AI</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- signle item -->
+                                        <div class=" isotop-item design mockup">
+                                            <div class="fillter-item bg-catkrill">
+                                                <a class="img" href="" data-bs-toggle="modal"
+                                                    data-bs-target="#portfolio-2">
+                                                    <img src="assets/img/work/work-img-2.png" alt="">
+                                                </a>
+                                                <span class="item-subtitle">Medical Interview Platform</span>
+                                                <h6 class="item-title">
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#portfolio-2">Smart History AI</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- signle item -->
+                                        <div class=" isotop-item logo mockup">
+                                            <div class="fillter-item bg-catkrill ">
+                                                <a class="img" href="" data-bs-toggle="modal"
+                                                    data-bs-target="#portfolio-3">
+                                                    <img src="assets/img/work/work-img-3.png" alt="">
+                                                </a>
+                                                <span class="item-subtitle">Custom Trainable Chatbot</span>
+                                                <h6 class="item-title">
+                                                    <a href="" data-bs-toggle="modal"
+                                                        data-bs-target="#portfolio-1">Chatbot AI</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- signle item -->
+                                        <div class=" isotop-item mockup">
+                                            <div class="fillter-item bg-prink">
+                                                <a class="img" href="" data-bs-toggle="modal"
+                                                    data-bs-target="#portfolio-4">
+                                                    <img src="assets/img/work/work-img-4.png" alt="">
+                                                </a>
+                                                <span class="item-subtitle">Simplifying Snack Access in Corporate Environments </span>
+                                                <h6 class="item-title">
+                                                    <a href="" data-bs-toggle="modal"
+                                                        data-bs-target="#portfolio-1">AsaanCheckout
+</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- signle item -->
+                                        <div class="isotop-item design logo">
+                                            <div class="fillter-item bg-prink">
+                                                <a class="img" href="" data-bs-toggle="modal"
+                                                    data-bs-target="#portfolio-5">
+                                                    <img src="assets/img/work/work-img-5.png" alt="">
+                                                </a>
+                                                <span class="item-subtitle">Bridging Communication Gaps</span>
+                                                <h6 class="item-title">
+                                                    <a href="" data-bs-toggle="modal"
+                                                        data-bs-target="#portfolio-5">ASL Fingerspelling Recognition</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                        <!-- signle item -->
+                                        <div class="isotop-item mockup design">
+                                            <div class="fillter-item bg-catkrill">
+                                                <a class="img" href="" data-bs-toggle="modal"
+                                                    data-bs-target="#portfolio-6">
+                                                    <img src="assets/img/work/work-img-6.png" alt="">
+                                                </a>
+                                                <span class="item-subtitle">Hairstyle AI</span>
+                                                <h6 class="item-title">
+                                                    <a href="" data-bs-toggle="modal" data-bs-target="#portfolio-6">Hairstyle AI</a>
+                                                </h6>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- footer copyright -->
+
+                    </div>
+                </div>
+                <!-- resume-page-end -->
+
+                <!-- main-menu-start -->
+                <div class="col-xxl-1 d-xxl-block d-none">
+                    <div class="bostami-main-menu-wrap">
+                        <nav class="bastami-main-menu main_menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html">
+                                        <span>
+                                            <i class="fa-light fa-address-card"></i>
+                                        </span>
+                                        about
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="resume.html">
+                                        <span>
+                                            <i class="fa-light fa-file-user"></i>
+                                        </span>
+                                        Background
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="portfolio.html">
+                                        <span>
+                                            <i class="fa-light fa-briefcase"></i>
+                                        </span>
+                                        Projects
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="blog.html">
+                                        <span>
+                                            <i class="fa-light fa-newspaper"></i>
+                                        </span>
+                                        Blogs
+                                    </a>
+                                </li> -->
+                                <li>
+                                    <a href="contact.html">
+                                        <span>
+                                            <i class="fa-light fa-address-book"></i>
+                                        </span>
+                                        contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- main-menu-end -->
+
+            </div>
+
+
+        </div>
+
+        <!-- portfolio-modal-start -->
+        <div class="modal portfolio-modal-box fade" id="portfolio-1" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal">
+                            <i class="far fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <h6 class="blog-title">
+                            Teacher AI
+                        </h6>
+
+                        <div class="portfolio-modal-table">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        Project : <span>Teacher AI</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-user "></i>
+                                        Client : <span>Jan van der Aa</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-code"></i>
+                                        Tech Stack : <span> Python, React JS, OpenAI</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        Preview : <a href="https://yourteacher.ai/">yourteacher.ai</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h1-modal-paragraph">
+                            <p>💬 Project Overview
+                                As a member of a collaborative development team at Kodexo Labs, I had the incredible opportunity to contribute to the creation of an innovative language learning application Our mission was to build a platform that would assist users in mastering new languages effectively.                                
+                            <p>🚀Leveraging Cutting-Edge Technology
+                                To achieve this goal, we harnessed the power of the OpenAI API and LangChain to take language learning to the next level.</p>
+                            </p>
+
+                        </div>
+                        <div class="h1-modal-img">
+                            <img src="assets/img/work/portfolio-modal-img-1.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- portfolio-modal-end -->
+
+        <!-- portfolio-modal-start -->
+        <div class="modal portfolio-modal-box fade" id="portfolio-2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal">
+                            <i class="far fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <h6 class="blog-title">
+                            Smart History
+                        </h6>
+
+                        <div class="portfolio-modal-table">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        Project : <span>Smart History
+                                        </span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-user "></i>
+                                        Client : <span>Christopher Bringham</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-code"></i>
+                                        Tech Stack : <span> Python,React JS, Claude, Vapi AI</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        Preview : <a href="https://smarthistory.ai/">smarthistory.ai</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h1-modal-paragraph">
+                            <p>💬 Project Overview
+                                As a member of a dynamic development team at Kodexo Labs, I had the privilege of contributing to the creation of a groundbreaking Smart Medical App. Our mission was to empower healthcare professionals by providing a platform that facilitates personalized medical interviews for patients.
+                                                                
+                            <p> 🚀 Leveraging Advanced AI Technology
+                                To achieve this, we integrated Langchain and ClaudeAI, enabling intelligent and interactive chatbot-based medical interviews that enhance patient engagement. </p>
+                                <p>🌟 Automated Medical Summaries
+                                The application automatically generates detailed and accurate medical interview summaries using advanced algorithms, ensuring that healthcare providers have the necessary information at their fingertips.</p>
+                                <p>🗣️ Secure Patient Interaction
+                                We prioritized patient confidentiality by providing a secure platform for health-related discussions with the chatbot, fostering trust and openness.</p>
+                                <p>📊 Comprehensive Review for Physicians
+                                The app allows physicians to review patient responses, medical history, and relevant details through comprehensive interview summaries, streamlining the patient care process and improving healthcare outcomes.</p>
+                            </p>
+
+                        </div>
+                        <div class="h1-modal-img">
+                            <img src="assets/img/work/portfolio-modal-img-2.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- portfolio-modal-end -->
+
+
+
+        <!-- portfolio-modal-start -->
+        <div class="modal portfolio-modal-box fade" id="portfolio-3" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal">
+                            <i class="far fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <h6 class="blog-title">
+                            Chatbot AI
+                        </h6>
+
+                        <div class="portfolio-modal-table">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        Project : <span>Chatbot AI</span>
+                                    </h3>
+                                </div>
+                                <!-- <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-user "></i>
+                                        Client : <span>Chatbot AI</span>
+                                    </h3>
+                                </div> -->
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-code"></i>
+                                        Tech Stack : <span> Python, React JS, RAG, Llama, Jina AI</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h1-modal-paragraph">
+                            <p>Developed a custom trainable chat bot using Chroma DB, FastAPI, OpenAI, and Socket.io. Users can train the chat bot via:</p>
+
+                                <p>1. Website ingestion (Jina AI) 🌐</p>
+                                <p>2. PDF uploads (Llama Parser) 📄</p>
+                                <p>3. Random text inputs ✍️</p>
+                                <p>4. Q&A pairs ❓➡️💡</p>
+                                <p>5. Live chat training 💬</p>
+                                
+                                <p>The chat bot employs Retrieval Augmented Generation (RAG) for accurate responses and can be embedded as a widget on websites. This enhances user interaction and provides automated support. </p>                               
+                            <p>🚀Leveraging Cutting-Edge Technology
+                                To achieve this goal, we harnessed the power of the OpenAI API and LangChain to take language learning to the next level.</p>
+
+                        </div>
+                        <div class="h1-modal-img">
+                            <img src="assets/img/work/portfolio-modal-img-3.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- portfolio-modal-end -->
+
+
+
+
+
+
+        <!-- portfolio-modal-start -->
+        <div class="modal portfolio-modal-box fade" id="portfolio-4" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal">
+                            <i class="far fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <h6 class="blog-title">
+                            AsaanCheckout
+                        </h6>
+
+                        <div class="portfolio-modal-table">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        Project : <span>AsaanCheckout</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-user "></i>
+                                        Client : <span>FAST NUCES</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-code"></i>
+                                        Tech Stack : <span> Python, YOLOv8, OpenCV, Roboflow</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h1-modal-paragraph">
+                            <p>AsaanCheckout
+ is an innovative system that transforms how snacks are obtained in workplaces and institutions. Using advanced technologies like object detection and facial recognition, it allows employees to access snacks without traditional payment methods.</p>
+                             <p>🔍 Key Features</p>  
+                             <p>- Smart Snack Detection: Utilizes YOLOv8 for real-time identification of snacks on shelves.</p>
+                             <p>- Facial Recognition for Access: Identifies individuals at entry points for seamless access.</p>
+                             <p>- Cashless Snack Selection: Users can freely pick snacks without cash or cards.</p>
+                             <p>- Automated Invoicing: Generates and emails an invoice detailing snacks taken upon exit.</p> 
+                            <p>✅ Benefits</p>
+                            <p>- Convenience: Quick and easy snack access without payment hassles.</p>
+                            <p>- Tracking and Accountability: Monitors snack consumption for responsible usage.</p>
+                            <p>- Resource Efficiency: Streamlines the snack procurement process for better management.</p>
+                            <p>AsaanCheckout
+ enhances the snack experience in corporate settings, boosting employee satisfaction and productivity.</p>
+                        </div>
+                        <div class="h1-modal-img">
+                            <img src="assets/img/work/portfolio-modal-img-4.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- portfolio-modal-end -->
+
+
+
+
+
+
+
+        <!-- portfolio-modal-start -->
+        <div class="modal portfolio-modal-box fade" id="portfolio-5" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal">
+                            <i class="far fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <h6 class="blog-title">
+                            ASL Fingerspelling Recognition
+                        </h6>
+
+                        <div class="portfolio-modal-table">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        Project : <span>ASL Fingerspelling Recognition</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-user "></i>
+                                        Client : <span>SignLab</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-code"></i>
+                                        Tech Stack : <span>Python, PyTorch and TensorFlow</span>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h1-modal-paragraph">
+                            <p>🤖 Project Overview
+                                Developing an advanced ASL Fingerspelling Recognition System using PyTorch and TensorFlow for real-time gesture interpretation.
+                                                                
+                            <p> 📊 Comprehensive Dataset
+                                Utilizing a Kaggle dataset with nearly 9,000 to 10,000 images per alphabet for robust training.</p>
+                                <p>🖐️ Accurate Hand Pose Detection
+                                    Leveraging MediaPipe for precise hand tracking and gesture recognition.</p>
+                                <p>🌐 Versatile Applications
+                                    Facilitating communication in interviews, video calling, and beyond.</p>
+                                <p>📱 Optimized Deployment
+                                    Utilizing TensorFlow Lite (TFLite) for efficient integration across devices.</p>
+                            </p>
+                        <p>🌟 Conclusion
+                            Promoting inclusivity and accessibility through innovative deep learning solutions.</p>
+                        </div>
+                        <div class="h1-modal-img">
+                            <img src="assets/img/work/portfolio-modal-img-5.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- portfolio-modal-end -->
+
+
+
+
+
+        <!-- portfolio-modal-start -->
+        <div class="modal portfolio-modal-box fade" id="portfolio-6" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal">
+                            <i class="far fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <h6 class="blog-title">
+                            AI Hairstyle
+                        </h6>
+
+                        <div class="portfolio-modal-table">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        Project : <span>AI Hairstyle</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-user "></i>
+                                        Client : <span>Kultural Kard Games</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-code"></i>
+                                        Tech Stack : <span> Stable Diffusion (Inpainting Model), Img2Img Generation, Segmentation and Masking (Using YOLOv8), Custom Fine-tuned LoRA Models, Controlnet with IP-adapter (For face restoration), FastAPI, Face Detection and Face Orientation (Roll, Pitch, Yaw), VAE Pruned Model
+                                        </span>
+                                    </h3>
+    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h1-modal-paragraph">
+                            <p>In this project, I developed an innovative try-on hairstyle application that utilizes advanced AI technologies to provide users with a realistic preview of various hairstyles. By integrating multiple sophisticated tools and models, the application delivers high-quality and seamless results.                            </p>
+
+                            <p>Key Features 🔑</p>                                
+                            <p> 1. Stable Diffusion (Inpainting Model) 🎨  
+                                Ensures seamless blending of hairstyles onto user images, maintaining exceptional realism and quality.
+                             </p>
+                                <p>2. Img2Img Generation 🖼️  
+                                    Modifies existing images while preserving essential features, allowing users to easily explore different hairstyle options.</p>
+                                <p>3. Segmentation and Masking (Using YOLOv8) 🎯  
+                                    Facilitates precise detection and separation of hair from the background, ensuring accurate hairstyle application.</p>
+                                <p>4. Custom Fine-Tuned Lora Models 🔧  
+                                    Enhances adaptability and performance, catering to a diverse range of hairstyle choices.</p>
+
+                                <p>5. ControlNet with IP-Adapter (For Face Restoration) 🧠  
+                                    Maintains consistent and natural facial features after hairstyle changes, ensuring a realistic appearance.</p>
+                                <p>6. FastAPI 🚀  
+                                    Provides a robust and scalable backend framework, supporting efficient application operations and user interactions.</p>
+                        
+                                <p>7. Face Detection and Orientation (Roll, Pitch, Yaw) 🧭  
+                                    Accurately aligns hairstyles according to the user's head position, resulting in a natural look.</p>
+                        
+                        
+                                <p>8. VAE Pruned Model 🏎️  
+                                    Streamlines processing, making the application faster and more resource-efficient.</p>
+                        
+                                <p>Conclusion 🎉
+
+                                    This hairstyle try-on application showcases my expertise in AI, machine learning, and application development. It exemplifies my ability to integrate and optimize multiple advanced technologies into a cohesive and user-friendly solution, offering an engaging experience for users exploring new hairstyles.</p>
+
+                                </div>
+                        <div class="h1-modal-img">
+                            <img src="assets/img/work/portfolio-modal-img-6.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- portfolio-modal-end -->
+
+
+
+
+
+    </div>
+
+    <!-- JS here -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swipper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/appear.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
